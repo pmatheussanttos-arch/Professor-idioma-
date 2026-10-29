@@ -5,9 +5,12 @@ Interface em português, feito para o iPhone, funciona offline e **não precisa 
 
 ## O que tem
 
-- **42 aulas** (21 por idioma): 3 níveis (iniciante, básico, intermediário) × 7 situações
-  (cumprimentos, apresentações, viagens, restaurantes, trabalho, compras, conversas cotidianas).
-- Cada aula: 6 frases + 3 palavras, com tradução, **pronúncia escrita aproximada**, dica de uso e áudio
+- **84 aulas** (42 por idioma): 3 níveis (iniciante, básico, intermediário) × 14 situações, com foco em **trabalho e vida no país**:
+  cumprimentos, pedidos e agradecimentos, palavras essenciais (números, verbos, conectores), apresentações,
+  dia a dia no trabalho, emprego e entrevistas, trabalho em escritório, viagens, restaurantes, compras,
+  moradia e serviços (banco, contas, documentos), saúde e emergências, lazer e conversas cotidianas.
+  A aba **💼 Trabalho** em *Aulas* reúne só as situações de trabalho.
+- Cada aula: 6 frases + 3 palavras (9 nas aulas de palavras essenciais), com tradução, **pronúncia escrita aproximada**, dica de uso e áudio
   (botões **Ouvir** e **Devagar**) usando a voz do próprio aparelho (Web Speech API).
 - **Rotina diária de ~15 min**: aquecimento (revisão) → aula nova → exercícios → ouvir e repetir.
 - **Exercícios**: múltipla escolha (frase → tradução e tradução → frase), ouvir e escolher, completar a frase
@@ -35,7 +38,7 @@ Interface em português, feito para o iPhone, funciona offline e **não precisa 
 ## Atualizar o app depois
 
 Mudou algum arquivo no GitHub? O Vercel publica sozinho a cada alteração.
-Se mudar arquivos do app, aumente o número em `CACHE` no `sw.js` (ex.: `meu-idiomas-v3`)
+Se mudar arquivos do app, aumente o número em `CACHE` no `sw.js` (ex.: `meu-idiomas-v4`)
 para que os aparelhos recebam a versão nova.
 
 ## Estrutura
@@ -54,7 +57,7 @@ tools/          testes (validate-data.mjs e e2e.cjs) — opcionais
 
 ### Acrescentar frases
 
-Em `data.js`, cada aula tem 6 frases e 3 palavras:
+Em `data.js`, cada aula tem 6 frases e 3 palavras (9 em "Palavras essenciais"):
 
 ```js
 // frase:   [original, português, como falar, palavra-para-completar | null, nota | null]
