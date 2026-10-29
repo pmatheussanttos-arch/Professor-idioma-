@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Meu Professor de Idiomas</title>
+  <meta name="description" content="Aprenda inglês e espanhol com 15 minutos por dia: frases, pronúncia, áudio, exercícios e progresso.">
+  <meta name="theme-color" content="#172c49">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Meu Idiomas">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">Meu Professor de Idiomas</div>
+      <a class="icon-btn" href="#/ajustes" aria-label="Ajustes" id="btn-settings">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+      </a>
+    </div>
+    <div class="lang-switch" role="group" aria-label="Idioma de estudo" id="lang-switch"></div>
+  </header>
+
+  <main id="app" class="app" tabindex="-1">
+    <noscript><p class="notice">Este aplicativo precisa de JavaScript ativado.</p></noscript>
+  </main>
+
+  <nav class="tabbar" id="tabbar" aria-label="Navegação principal"></nav>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
